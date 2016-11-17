@@ -13,6 +13,7 @@
 		A9CA81F41DDC39990013F919 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CA81F21DDC39990013F919 /* Main.storyboard */; };
 		A9CA81F61DDC39990013F919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CA81F51DDC39990013F919 /* Assets.xcassets */; };
 		A9CA81F91DDC39990013F919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CA81F71DDC39990013F919 /* LaunchScreen.storyboard */; };
+		A9CA82021DDC3ADB0013F919 /* ASHWebNSURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CA82011DDC3ADB0013F919 /* ASHWebNSURLProtocol.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		A9CA81F51DDC39990013F919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9CA81F81DDC39990013F919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A9CA81FA1DDC39990013F919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9CA82001DDC3ADB0013F919 /* ASHWebNSURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHWebNSURLProtocol.h; sourceTree = "<group>"; };
+		A9CA82011DDC3ADB0013F919 /* ASHWebNSURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHWebNSURLProtocol.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				A9CA81F71DDC39990013F919 /* LaunchScreen.storyboard */,
 				A9CA81FA1DDC39990013F919 /* Info.plist */,
 				A9CA81E91DDC39990013F919 /* Supporting Files */,
+				A9CA82001DDC3ADB0013F919 /* ASHWebNSURLProtocol.h */,
+				A9CA82011DDC3ADB0013F919 /* ASHWebNSURLProtocol.m */,
 			);
 			path = ASHWebURLProtocol;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 				TargetAttributes = {
 					A9CA81E51DDC39990013F919 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = X75CUV458P;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -150,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9CA82021DDC3ADB0013F919 /* ASHWebNSURLProtocol.m in Sources */,
 				A9CA81F11DDC39990013F919 /* ViewController.m in Sources */,
 				A9CA81EE1DDC39990013F919 /* AppDelegate.m in Sources */,
 				A9CA81EB1DDC39990013F919 /* main.m in Sources */,
@@ -270,7 +277,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X75CUV458P;
 				INFOPLIST_FILE = ASHWebURLProtocol/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ash.ASHWebURLProtocol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -281,7 +290,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X75CUV458P;
 				INFOPLIST_FILE = ASHWebURLProtocol/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ash.ASHWebURLProtocol;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,6 +318,7 @@
 				A9CA81FF1DDC39990013F919 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ASHWebNSURLProtocol.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [NSURLProtocol  registerClass:[ASHWebNSURLProtocol class]];
     return YES;
 }
 
