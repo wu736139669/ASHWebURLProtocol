@@ -1,6 +1,6 @@
 # ASHWebURLProtocol
 iOS WebView缓存
-###首先继承 `NSURLProtocol`
+###首先继承 <font color=green>`NSURLProtocol`</font>
 
 ```
 +(BOOL)canInitWithRequest:(NSURLRequest *)request
@@ -18,7 +18,7 @@ iOS WebView缓存
     return YES;
 }
 ```
-`NSString* UA = [request valueForHTTPHeaderField:@"User-Agent"];`
+<font color=green>`NSString* UA = [request valueForHTTPHeaderField:@"User-Agent"];`</font>
 中可以判断是否是`WebView`发出的请求。
 当判断是`WebView`的时候才进行处理。
 
@@ -51,7 +51,7 @@ iOS WebView缓存
     
 }
 ```
-###上面是主要的代码，先使用了缓存，然后再去重新请求，这样就会刷新请求数据.
+###上面是主要的代码，<font color=green>先使用了缓存，然后再去重新请求，这样就会刷新请求数据</font>.
 
 
 ```
@@ -74,7 +74,7 @@ iOS WebView缓存
 最后一段就是对内容进行保存，当然也可以根据后缀把图片单独用`SDWebImage`保存，可以和原生代码里面的图片共用缓存。
 
 
-###最后还需要注册一下 在 `AppDelegate` 中
+###最后还需要注册一下 在  <font color=green>`AppDelegate`</font> 中
 
 ```
 [NSURLProtocol  registerClass:[ASHWebNSURLProtocol class]];
